@@ -1,0 +1,49 @@
+li p::first-letter{
+    color: rgb(255, 60, 0);
+    font-size: 30px;
+    background-color: rgb(184, 228, 27);
+}
+
+ div p::first-line{
+background-color: brown;
+font-size: 20px;
+}
+
+/* select some lines to see magic */
+ul li p::selection{ 
+    background-color: tomato;
+    color: yellow;
+}
+
+form input::placeholder{
+color: purple;
+font-size: 20px;
+}
+
+h3::before{
+    content: 'hello';
+    background-color: brown;
+    color: yellow;
+    display: block;
+   
+}
+/* hover over image */
+/* you cannot use this on image tags */
+h3:hover:after{
+    content: 'hello';
+    background-color: brown;
+    color: yellow;
+    display: block;
+
+}
+h4::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background-color: rgb(231, 49, 17);
+    display: block;
+    margin: auto;
+    }
+    h4:hover::after{
+        width: 100%;
+    }

@@ -1,0 +1,49 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* div{
+    height: 200px;
+    width: 200px;
+}
+.box{
+    background: gray;
+}
+.box1{
+    background-color: tomato;
+    font-size: 30px;
+    
+} */
+/* transform-origin:  top; */
+/* transform: perspective(500px) rotateX(30deg) ; */
+/* use scale , translate and such properties with rotate to see result` */
+/* transform: perspective(800px) rotateY(60deg) translate3d(200px,100px,200px); } */
+
+
+.container{
+    width: 400px;
+    height: 250px;
+    margin: 0 0 70px 100px;
+    background: gray;
+    perspective: 800px;
+    transform: rotateY(30deg);
+    /* Give to parent div only */
+    transform-style: preserve-3d;
+    perspective-origin: bottom ;
+}
+
+.img{
+    width: 400px;
+    height: 250px;
+    background: pink;
+    padding-top: 20px;
+    transform: rotateX(60deg);
+}
+.img:hover{
+transform: rotateX(360deg);
+transition: 4s;
+}

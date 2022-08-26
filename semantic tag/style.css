@@ -1,0 +1,20 @@
+img{
+    width: 300px;
+}
+
+form{
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+form:focus-within{
+    background-color: tomato;
+}

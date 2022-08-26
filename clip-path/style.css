@@ -1,0 +1,32 @@
+/* body {
+  background-color: black;
+} */
+
+/* Website :- bennettfeely.com/clippy(To generate polygon shapes) */
+/* Circle:- radius , x-axis , y-axis */
+/* Ellipse :- x-radius , y-radius , then 2 axis */
+/* Inset :- margin from top , right , bottom , left */
+/* Polygon :- any shape both axis in clock wise direction  */
+
+/* img{
+    clip-path: circle(40% at 40% 40%);
+} */
+/* img{
+    clip-path: ellipse(20% 40% at 50% 50%)
+} */
+/* img{
+    clip-path: inset(50% 40% 30% 40% )
+} */
+/* img{
+    clip-path: Polygon(50% 0% , 0% 100% , 100% 100%, 50% 50%)
+} */
+
+.box {
+    float: left;
+    clip-path: polygon(0 1%, 0 100% , 99% 46%);
+  shape-outside: polygon(0 1%, 0 100% , 99% 46%);
+  shape-margin: 20px;
+  height: 400px;
+  width: 500px;
+  background-color: brown;
+}

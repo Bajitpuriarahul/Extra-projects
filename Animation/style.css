@@ -1,0 +1,48 @@
+body {
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  height: 200px;
+  width: 300px;
+  background: sienna;
+  font-size: 40px;
+  line-height: 200px;
+  text-align: center;
+  animation-name: abc;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  /* animation-delay: 2s; */
+  /* animation-timing-function: cubic-bezier(0.1,0.9,0.5,0.7); */
+  animation-fill-mode: both;  
+  animation-play-state: paused;
+  /* short-hand */
+  /* animation: abc 2s cubic-bezier(0.1,0.9,0.5,0.7) infinite forwards alternate; */
+}
+
+.box:hover{
+  animation-play-state: running;    
+}
+@keyframes abc {
+  /* from */
+   0%{
+    background: forestgreen ;
+    width: 300px;
+  }
+  50%{
+    background-color: yellow;
+    width: 400px;
+
+  }
+  /* to  */
+  100%{
+   background-color: royalblue;
+   width: 500px;
+
+  }
+}

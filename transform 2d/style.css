@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  font-size: 30px;
+  /* transform: rotate(-50deg); */
+  /* transform: skew(20deg, 40deg); */
+  /* transform-origin: 30% 20%; */
+  /* used in animation  */
+  /* transform: translate(60px , 80px); */
+  /* transform: scaleY(4);  here you can use transfrom-origin to expand from that point */
+  /* use multiple properties  */
+  /* transform: scale(2) skew(20deg) ; */
+}
+
+.box:hover{
+  /* transform: scale(3); */
+  /* transform: rotate(360deg); */
+  transition: 2s;
+  transform: scale(2) skew(20deg) ;
+  /* transform-origin: right ; */
+}

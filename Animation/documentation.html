@@ -1,0 +1,49 @@
+<!-- 
+    1 animation-name
+    2 animation-duration
+    3 animation-timing-function:--- (
+        ease 
+        linear
+        ease-in
+        ease-out
+        ease-in-out
+        step-start  == steps(1,start)
+        step-end     == steps(1,end)
+        steps(#,start/end)
+        cubic-bezier(0.2,0.3,0.5,0.7)
+        only four steps in cubic-bezier and these mean 
+        animation speed at 25 50 75 100 %
+
+    )
+    4 animation-delay
+    5 animation-iteration-count 
+
+    6 animation-direction
+:   normal :--- (By Default)
+:Reverse:---- (100 se 0 , same as normal but reverse)
+:Alternate:--- (0 se 100  fir 100 se 0 )
+:Alternate-reverse:--- (100 se 0 fir 0 se 100)
+(jab animation ko multiple times chalana ho tb animation ek bar complete hoker ekdm se start pe aa jati hai tho yh property use krte hai taki ek bar animation complete hokr vapis aram se start pe ajaye)
+
+7 animation:--- (name duration cubic-bezier forwards count direction)
+
+8 animation-fill-mode:-- 
+    none :-- By Default
+    forwards :---  animation will go as usual but after 100% , will not go back to normal
+    backwards :--- delay time mai hi  , animation   0% wala  start krdega
+    both :--- means both
+
+9 animation-play-state
+pasued ( be used in case of hover )
+running ( same as above)
+like pasued in basic and running in hover
+ -->
+
+<!-- 
+    to use these properties 
+    use 
+    @Keyframes animation-name{
+        from or 0% {CSS Properties}
+        to or 100% {CSS Properties}
+    }
+  -->
